@@ -62,7 +62,7 @@ compression results are stated against one specific checkpoint. Override with
 
 ## Reproducing the results
 
-### 1. Train the baseline (Question 1) — ~43 min on a P100
+### 1. Train the baseline (Question 1)
 
 ```bash
 python train.py --epochs 50 --seed 42
@@ -71,7 +71,7 @@ python train.py --epochs 50 --seed 42
 Writes `checkpoints/best_mobilenetv2_cifar10.pth`, `history.json`,
 `training_curves.png`. Not needed if you use the committed checkpoint.
 
-### 2. Single compression run (Question 2) — ~10 s
+### 2. Single compression run (Question 2) 
 
 ```bash
 python test.py --weight_quant_bits 8 --activation_quant_bits 8
@@ -81,7 +81,7 @@ Prints accuracy, compression ratios, and the full storage breakdown; writes
 `results_w8a8.json`. At w8/a8 the accuracy drop should be under 0.3 points —
 if it is larger, check the post-fold sanity line printed before quantization.
 
-### 3. Full sweep + wandb chart (Question 3) — ~3 min, 22 runs
+### 3. Full sweep + wandb chart (Question 3)
 
 ```bash
 python sweep.py --wandb
