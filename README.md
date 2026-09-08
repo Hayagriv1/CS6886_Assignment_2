@@ -78,8 +78,7 @@ python test.py --weight_quant_bits 8 --activation_quant_bits 8
 ```
 
 Prints accuracy, compression ratios, and the full storage breakdown; writes
-`results_w8a8.json`. At w8/a8 the accuracy drop should be under 0.3 points —
-if it is larger, check the post-fold sanity line printed before quantization.
+`results_w8a8.json`. 
 
 ### 3. Full sweep + wandb chart (Question 3)
 
