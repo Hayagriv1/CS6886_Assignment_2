@@ -1,0 +1,7 @@
+# Versions used for all reported results (Kaggle P100, CUDA 12.1).
+torch==2.4.0
+torchvision==0.19.0
+numpy==1.26.4
+Pillow==10.4.0
+matplotlib==3.7.5
+wandb==0.17.7
