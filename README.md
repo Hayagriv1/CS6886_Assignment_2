@@ -92,7 +92,6 @@ Coordinates, with axes `activation_quant_bits`, `weight_quant_bits`,
 `compression_ratio`, `model_size_mb`, `quantized_acc`, coloured by
 `quantized_acc`.
 
-Add `--quick` for a two-configuration smoke test first.
 
 ### 4. Reported operating point (Question 4)
 
